@@ -11,6 +11,8 @@ import org.springframework.web.client.RestTemplate;
 
 @SpringBootApplication
 public class NewsgroupApplication {
+	//TODO: check if there are better ways to call api, is this secure?
+	//Todo: store the value in memory and keep a global object and see the repercussions of keeping static of such huge data.
 	private static final Logger LOG =LoggerFactory.getLogger(NewsgroupApplication.class);
 	public static void main(String[] args) {
 		SpringApplication.run(NewsgroupApplication.class, args);

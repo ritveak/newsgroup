@@ -8,6 +8,7 @@ import org.springframework.web.client.RestTemplate;
 
 @Service
 public class NewsApiService {
+    //TODO: Need to encrypt api key
     private final String EVERYTHING_API_URL = "https://newsapi.org/v2/everything?q=bitcoin&apiKey=ccaf5d41cc5140c984818c344edcc14d";
     private final RestTemplate restTemplate;
 
