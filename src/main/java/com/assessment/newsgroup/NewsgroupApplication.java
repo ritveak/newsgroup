@@ -19,15 +19,10 @@ public class NewsgroupApplication {
 	}
 
 	@Bean
-	RestTemplate restTemplate(){
-		return  new RestTemplate();
-	}
-
-	@Bean
 	CommandLineRunner commandLineRunner(NewsApiService newsApiService){
 		return args -> {
 			//when the application loads, get the news articles
-			var response = newsApiService.getNews();
+			var response = newsApiService.searchNews("apple");
 			System.out.println(response.totalResults());
 			LOG.info("News fetched from News API, total count received : "+ response.totalResults());
 		};
