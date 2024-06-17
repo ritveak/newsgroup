@@ -17,7 +17,7 @@ public class NewsController {
     private NewsApiService newsService;
 
     @GetMapping("/search")
-    public Map<String, List<Article>> searchNews(@RequestParam String keyword,
+    public Map<String, List<Article>> searchNews(@RequestParam(required = false, defaultValue = "") String keyword,
                                                  @RequestParam(required = false, defaultValue = "12") long interval,
                                                  @RequestParam(required = false, defaultValue = "HOURS") ChronoUnit unit) {
         return newsService.searchNews(keyword, interval, unit);
