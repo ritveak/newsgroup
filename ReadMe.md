@@ -51,7 +51,7 @@ This project is a Spring Boot-based microservice that allows users to search for
 4. Access Swagger UI
    Open your web browser and navigate to:
     ```
-    http://localhost:8080/swagger-ui.html
+    http://localhost:9090/swagger-ui.html
     ```
 API Endpoints
 Search News
@@ -66,7 +66,7 @@ Search News
 
 Example Request
 ```
-curl -X GET "http://localhost:8080/search?keyword=apple&interval=12&unit=HOURS" -H "accept: application/json"
+curl -X GET "http://localhost:9090/search?keyword=apple&interval=12&unit=HOURS" -H "accept: application/json"
 ```
 Example Response
 ```json

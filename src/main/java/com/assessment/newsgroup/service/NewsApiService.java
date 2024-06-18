@@ -2,6 +2,7 @@ package com.assessment.newsgroup.service;
 
 import com.assessment.newsgroup.cache.NewsCache;
 import com.assessment.newsgroup.model.Article;
+import com.assessment.newsgroup.model.CustomChronoUnit;
 import com.assessment.newsgroup.model.NewsApiResponse;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
@@ -28,7 +29,8 @@ public class NewsApiService {
     private long cacheDuration;
     private final RestTemplate restTemplate = new RestTemplate();
     private final NewsCache newsCache = new NewsCache();
-    public Map<String, List<Article>> searchNews(String keyword, long interval, ChronoUnit unit) {
+    public Map<String, List<Article>> searchNews(String keyword, long interval, CustomChronoUnit customChronoUnit) {
+        var chronoUnit = customChronoUnit.toChronoUnit();
         List<Article> articles;
 
         try {
@@ -44,7 +46,7 @@ public class NewsApiService {
 
         // Grouping logic
         return articles.stream()
-                .collect(Collectors.groupingBy(article -> getIntervalKey(article.publishedAt(), interval, unit, ZonedDateTime.now())));
+                .collect(Collectors.groupingBy(article -> getIntervalKey(article.publishedAt(), interval, chronoUnit, ZonedDateTime.now())));
     }
 
     private List<Article> fetchArticlesFromApi(String keyword) {
