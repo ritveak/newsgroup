@@ -27,19 +27,22 @@ This project is a Spring Boot-based microservice that allows users to search for
 
 ### Prerequisites
 
-- Java 11 or higher
+- Java 17+
+- Node.js 14+
 - Maven
 - Docker (for containerization)
 - NewsAPI Key (You can register for a free API key at [NewsAPI](https://newsapi.org/))
 
-### Running the Application
+# Running the Application
 
+
+## Backend Setup
 1. **Clone the repository**
    ```
    git clone https://github.com/your-username/news-search-microservice.git
    cd news-search-microservice
 2. Configure API Key
-   Update the application.properties file with your NewsAPI key:
+   Update backend/src/main/resources/application.properties with your API key:
     ```
     newsapi.key=YOUR_NEWSAPI_KEY
     ```
@@ -53,40 +56,24 @@ This project is a Spring Boot-based microservice that allows users to search for
     ```
     http://localhost:9090/swagger-ui.html
     ```
-API Endpoints
-Search News
 
-    URL: /search
-    Method: GET
-    Parameters:
-        keyword (optional): The keyword to search for.
-        interval (optional): The interval for grouping results (default: 12).
-        unit (optional): The unit for the interval (default: HOURS).
-    Response: A map containing grouped news articles.
+## Frontend Setup
 
-Example Request
-```
-curl -X GET "http://localhost:9090/search?keyword=apple&interval=12&unit=HOURS" -H "accept: application/json"
-```
-Example Response
-```json
-{
-  "2023-06-13T12:00:00": [
-    {
-      "title": "Apple announces new product",
-      "description": "Apple has announced a new product...",
-      "publishedAt": "2023-06-13T12:34:56Z",
-      "url": "https://example.com/news/apple-new-product"
-    }
-  ],
-  "2023-06-13T00:00:00": [
-    {
-      "title": "Stock prices for Apple soar",
-      "description": "The stock prices for Apple have soared...",
-      "publishedAt": "2023-06-13T01:23:45Z",
-      "url": "https://example.com/news/apple-stock-prices"
-    }
-  ]
-}
+Navigate to the Frontend Directory:
 
 ```
+cd src/main/frontend
+```
+
+
+Install Dependencies:
+```
+npm install
+```
+
+Run the Frontend Application:
+
+```
+npm start
+```
+The frontend will be accessible at http://localhost:3000.
