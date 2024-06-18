@@ -58,7 +58,7 @@ public class NewsApiServiceTest {
 
         when(restTemplate.getForObject(anyString(), eq(NewsApiResponse.class))).thenReturn(response);
 
-        Map<String, List<Article>> result = newsApiService.searchNews(keyword, interval, unit);
+        Map<String, List<Article>> result = newsApiService.searchNews(keyword, interval, unit,false);
 
         assertEquals(1, result.size());
         var expectedKey = publishedAt.plusHours(9).truncatedTo(ChronoUnit.HOURS).toString();
@@ -81,7 +81,7 @@ public class NewsApiServiceTest {
         when(newsCache.isCacheValid(eq(keyword), anyLong())).thenReturn(true);
         when(newsCache.getFromCache(eq(keyword))).thenReturn(List.of(article));
 
-        Map<String, List<Article>> result = newsApiService.searchNews(keyword, interval, unit);
+        Map<String, List<Article>> result = newsApiService.searchNews(keyword, interval, unit,false);
 
         assertEquals(1, result.size());
         var expectedKey = publishedAt.plusHours(9).truncatedTo(ChronoUnit.HOURS).toString();
@@ -101,7 +101,7 @@ public class NewsApiServiceTest {
         when(restTemplate.getForObject(anyString(), eq(NewsApiResponse.class))).thenThrow(new ResourceAccessException("API unavailable"));
         when(newsCache.isCacheValid(eq(keyword), anyLong())).thenReturn(false);
 
-        Map<String, List<Article>> result = newsApiService.searchNews(keyword, interval, unit);
+        Map<String, List<Article>> result = newsApiService.searchNews(keyword, interval, unit,false);
 
         assertTrue(result.isEmpty());
 

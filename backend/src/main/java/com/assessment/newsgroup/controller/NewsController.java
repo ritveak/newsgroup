@@ -34,8 +34,11 @@ public class NewsController {
             @Parameter(description = "Interval for grouping results", required = false)
             @RequestParam(required = false, defaultValue = "12") long interval,
             @Parameter(description = "Unit for the interval", required = false,schema = @Schema(implementation = CustomChronoUnit.class))
-            @RequestParam(required = false, defaultValue = "HOURS") CustomChronoUnit unit) {
+            @RequestParam(required = false, defaultValue = "HOURS") CustomChronoUnit unit,
+            @Parameter(description = "Is Offline mode or not", required = false)
+            @RequestParam(required = false, defaultValue = "false") Boolean isOfflineMode
+            ) {
 
-        return newsService.searchNews(keyword, interval, unit);
+        return newsService.searchNews(keyword, interval, unit,isOfflineMode);
     }
 }

@@ -2,6 +2,7 @@ package com.assessment.newsgroup.cache;
 
 
 import com.assessment.newsgroup.model.Article;
+import com.assessment.newsgroup.service.ScheduledTasks;
 
 import java.util.HashMap;
 import java.util.List;
@@ -18,7 +19,7 @@ public class NewsCache {
     }
 
     public List<Article> getFromCache(String keyword) {
-        return cache.getOrDefault(keyword, List.of());
+        return cache.getOrDefault(keyword, cache.getOrDefault(ScheduledTasks.TOP_HEADLINES,List.of()));
     }
 
     public boolean isCacheValid(String keyword, long cacheDuration) {
