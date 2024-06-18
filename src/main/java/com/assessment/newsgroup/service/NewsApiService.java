@@ -27,8 +27,14 @@ public class NewsApiService {
 
     @Value("${newsapi.cacheduration}")
     private long cacheDuration;
-    private final RestTemplate restTemplate = new RestTemplate();
-    private final NewsCache newsCache = new NewsCache();
+    private final RestTemplate restTemplate;
+    private final NewsCache newsCache;
+
+    public NewsApiService(RestTemplate restTemplate, NewsCache newsCache) {
+        this.restTemplate = restTemplate;
+        this.newsCache = newsCache;
+    }
+
     public Map<String, List<Article>> searchNews(String keyword, long interval, CustomChronoUnit customChronoUnit) {
         var chronoUnit = customChronoUnit.toChronoUnit();
         List<Article> articles;
@@ -61,6 +67,6 @@ public class NewsApiService {
         long periods = unit.between(publishedDate, now) / interval;
          now = now.minus(periods * interval, unit);
 
-        return now.toString();
+        return now.truncatedTo(ChronoUnit.HOURS).toString();
     }
 }
