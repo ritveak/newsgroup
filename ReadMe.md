@@ -14,6 +14,9 @@ This project is a Spring Boot-based microservice that allows users to search for
 - **Error Handling**: Returns relevant results even when underlying dependencies are unavailable.
 - **Swagger Integration**: Provides an interactive API documentation interface using Springdoc OpenAPI.
 
+## Flow diagram
+![Flow Diagram](News%20Flow.png)
+
 ## Technologies Used
 
 - **Spring Boot**: Backend framework
