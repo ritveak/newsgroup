@@ -7,9 +7,13 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 const App = () => {
   const [articles, setArticles] = useState([]);
+  const [interval, setInterval] = useState([]);
+  const [unit, setUnit] = useState([]);
 
   const handleSearch = (keyword,interval,unit,isOfflineMode) => {
     console.log("isOffline Mode = "+isOfflineMode)
+    setInterval(interval);
+    setUnit(unit);
     fetch(`/search?keyword=${keyword}&interval=${interval}&unit=${unit}&isOfflineMode=${isOfflineMode}`)
         .then((response) => response.json())
         .then((data) => {setArticles(data);                 console.log(data)        })
@@ -1326,7 +1330,7 @@ return (
     <div>
         <h1>News Search App</h1>
         <SearchBar onSearch={handleSearch} />
-        <NewsList articles={articles} />
+        <NewsList articles={articles} interval={interval} unit ={unit}  />
         {/* <NewsList articles={sampleArticle} /> */}
     </div>
 );

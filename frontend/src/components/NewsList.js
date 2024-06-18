@@ -1,16 +1,49 @@
 import React from 'react';
 import Card from 'react-bootstrap/Card';
 import defaultImage from '../news.png'; // Import your local image
+import { DateTime } from 'luxon';
 
-const NewsList = ({ articles }) => {
+const NewsList = ({ articles, interval,unit}) => {
     const renderArticlesByDate = () => {
         let renderedArticles = [];
+       
+        
+const adjustStartDate = (startDate, interval, unit, index) => {
+    switch (unit) {
+        case 'MINUTES':
+            return startDate.minus({ minutes: interval * (index + 1) });
+        case 'HOURS':
+            return startDate.minus({ hours: interval * (index + 1) });
+        case 'DAYS':
+            return startDate.minus({ days: interval * (index + 1) });
+        case 'WEEKS':
+            return startDate.minus({ weeks: interval * (index + 1) });
+        case 'MONTHS':
+            return startDate.minus({ months: interval * (index + 1) });
+        case 'YEARS':
+            return startDate.minus({ years: interval * (index + 1) });
+        default:
+            return startDate;
+    }
+}
 
         for (const [date, articlesInDate] of Object.entries(articles)) {
+            console.log(date);
+            const endDate = DateTime.fromISO(date);
+    let startDate = endDate;
+
+    startDate = adjustStartDate(startDate, interval, unit, renderedArticles.length);
+    const startDateString = startDate.toLocaleString(DateTime.DATE_SHORT);
+    const endDateString = endDate.toLocaleString(DateTime.DATE_SHORT);
+
+
             renderedArticles.push(
                 <div key={date} style={{height:'48rem'}}>
-                    <h8>{new Date(date).toLocaleDateString()}</h8>
-                    <div className="card-deck d-flex flex-nowrap overflow-auto">
+                  
+            <h8>
+                {`Interval ${renderedArticles.length+1}: Articles from ${startDateString} to ${endDateString} [${articlesInDate.length} Articles]`}
+            </h8>
+                             <div className="card-deck d-flex flex-nowrap overflow-auto">
                         {renderArticles(articlesInDate)}
                     </div>
                 </div>

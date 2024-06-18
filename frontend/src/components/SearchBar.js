@@ -35,8 +35,8 @@ const SearchBar = ({ onSearch }) => {
             <input
                 type="checkbox"
                 value={isOfflineMode}
-                onChange={(e) =>     {console.log("isOffline Mode = "+e.target.checked)
-                    setIsOfflineMode(e.target.checked)}}
+                onChange={(e) =>
+                    setIsOfflineMode(e.target.checked)}
                 placeholder="Switch to offline mode"
             />
             <button type="submit">Search</button>
