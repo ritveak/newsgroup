@@ -8,8 +8,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 const App = () => {
   const [articles, setArticles] = useState([]);
 
-  const handleSearch = (keyword,interval,unit) => {
-    fetch(`/search?keyword=${keyword}&interval=${interval}&unit=${unit}`)
+  const handleSearch = (keyword,interval,unit,isOfflineMode) => {
+    console.log("isOffline Mode = "+isOfflineMode)
+    fetch(`/search?keyword=${keyword}&interval=${interval}&unit=${unit}&isOfflineMode=${isOfflineMode}`)
         .then((response) => response.json())
         .then((data) => {setArticles(data);                 console.log(data)        })
         .catch((error) => console.error('Error fetching news:', error));
@@ -1325,8 +1326,8 @@ return (
     <div>
         <h1>News Search App</h1>
         <SearchBar onSearch={handleSearch} />
-        {/* <NewsList articles={articles} /> */}
-        <NewsList articles={sampleArticle} />
+        <NewsList articles={articles} />
+        {/* <NewsList articles={sampleArticle} /> */}
     </div>
 );
 };
