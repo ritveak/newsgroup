@@ -14,11 +14,11 @@ import org.mockito.junit.jupiter.MockitoExtension;
 import org.springframework.http.HttpStatus;
 import org.springframework.test.util.ReflectionTestUtils;
 import org.springframework.web.client.HttpServerErrorException;
-import org.springframework.web.client.ResourceAccessException;
 import org.springframework.web.client.RestTemplate;
 
 import java.time.ZonedDateTime;
 import java.time.temporal.ChronoUnit;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
@@ -54,7 +54,11 @@ public class NewsApiServiceTest {
 
         var publishedAt = ZonedDateTime.now().truncatedTo(ChronoUnit.HOURS).minusHours(21);
         Article article = new Article(new Source("id1","Test Title"), "Author","Title","Test Description", "Test URL", "Test URL to Image", publishedAt.toString(), "Test Content");
-        NewsApiResponse response = new NewsApiResponse("ok", 1, List.of(article));
+        Article removedArticle = new Article(new Source("id1","Test Title"), "Author","[Removed]","Test Description", "Test URL", "Test URL to Image", publishedAt.toString(), "Test Content");
+        var listOfArticles = new ArrayList<Article>();
+        listOfArticles.add(article);
+        listOfArticles.add(removedArticle);
+        NewsApiResponse response = new NewsApiResponse("ok", 1,listOfArticles);
 
         when(restTemplate.getForObject(anyString(), eq(NewsApiResponse.class))).thenReturn(response);
 
@@ -67,9 +71,80 @@ public class NewsApiServiceTest {
 
         verify(newsCache, times(1)).addToCache(eq(keyword), eq(List.of(article)));
     }
-
     @Test
-    public void testSearchNews_WithCacheFallback() {
+    public void testSearchNews_WithCacheFallback_WhenAPIReturnsNull() {
+        String keyword = "test";
+        CustomChronoUnit unit = CustomChronoUnit.HOURS;
+        long interval = 12L;
+
+        var publishedAt = ZonedDateTime.now().truncatedTo(ChronoUnit.HOURS).minusHours(21);
+        Article article = new Article(new Source("id1","Test Title"), "Author","Title","Test Description", "Test URL", "Test URL to Image", publishedAt.toString(), "Test Content");
+
+        when(restTemplate.getForObject(anyString(), eq(NewsApiResponse.class))).thenReturn(null);
+
+        when(newsCache.getFromCache(eq(keyword))).thenReturn(List.of(article));
+
+
+        Map<String, List<Article>> result = newsApiService.searchNews(keyword, interval, unit,false);
+
+        assertEquals(1, result.size());
+        var expectedKey = publishedAt.plusHours(9).truncatedTo(ChronoUnit.HOURS).toString();
+        assertTrue(result.containsKey(expectedKey));
+        assertEquals(1, result.get(expectedKey).size());
+
+        verify(newsCache, times(0)).addToCache(eq(keyword), eq(List.of(article)));
+        verify(newsCache, times(1)).getFromCache(eq(keyword));
+
+    }
+    @Test
+    public void testSearchNews_WithCacheFallback_WhenAPIReturnsEmptyList() {
+        String keyword = "test";
+        CustomChronoUnit unit = CustomChronoUnit.HOURS;
+        long interval = 12L;
+
+        var publishedAt = ZonedDateTime.now().truncatedTo(ChronoUnit.HOURS).minusHours(21);
+        Article article = new Article(new Source("id1","Test Title"), "Author","Title","Test Description", "Test URL", "Test URL to Image", publishedAt.toString(), "Test Content");
+
+        when(restTemplate.getForObject(anyString(), eq(NewsApiResponse.class))).thenReturn(new NewsApiResponse("status",0,new ArrayList<>()));
+
+        when(newsCache.getFromCache(eq(keyword))).thenReturn(List.of(article));
+
+
+        Map<String, List<Article>> result = newsApiService.searchNews(keyword, interval, unit,false);
+
+        assertEquals(1, result.size());
+        var expectedKey = publishedAt.plusHours(9).truncatedTo(ChronoUnit.HOURS).toString();
+        assertTrue(result.containsKey(expectedKey));
+        assertEquals(1, result.get(expectedKey).size());
+
+        verify(newsCache, times(0)).addToCache(eq(keyword), eq(List.of(article)));
+        verify(newsCache, times(1)).getFromCache(eq(keyword));
+
+    }
+    @Test
+    public void testSearchNews_WithCacheFallback_WhenOfflineMode() {
+        String keyword = "test";
+        CustomChronoUnit unit = CustomChronoUnit.HOURS;
+        long interval = 12L;
+
+        var publishedAt = ZonedDateTime.now().truncatedTo(ChronoUnit.HOURS).minusHours(21);
+        Article article = new Article(new Source("id1","Test Title"), "Author","Title","Test Description", "Test URL", "Test URL to Image", publishedAt.toString(), "Test Content");
+        when(newsCache.getFromCache(eq(keyword))).thenReturn(List.of(article));
+
+
+        Map<String, List<Article>> result = newsApiService.searchNews(keyword, interval, unit,true);
+
+        assertEquals(1, result.size());
+        var expectedKey = publishedAt.plusHours(9).truncatedTo(ChronoUnit.HOURS).toString();
+        assertTrue(result.containsKey(expectedKey));
+        assertEquals(1, result.get(expectedKey).size());
+
+        verify(newsCache, times(0)).addToCache(eq(keyword), eq(List.of(article)));
+        verify(newsCache, times(1)).getFromCache(eq(keyword));
+
+    }
+    @Test
+    public void testSearchNews_WithCacheFallback_WhenExceptionFromAPI() {
         String keyword = "test";
         CustomChronoUnit unit = CustomChronoUnit.HOURS;
         long interval = 12L;
@@ -78,7 +153,6 @@ public class NewsApiServiceTest {
         Article article = new Article(new Source("id1","Test Title"), "Author","Title","Test Description", "Test URL", "Test URL to Image", publishedAt.toString(), "Test Content");
 
         when(restTemplate.getForObject(anyString(), eq(NewsApiResponse.class))).thenThrow(new HttpServerErrorException(HttpStatus.INTERNAL_SERVER_ERROR));
-        when(newsCache.isCacheValid(eq(keyword), anyLong())).thenReturn(true);
         when(newsCache.getFromCache(eq(keyword))).thenReturn(List.of(article));
 
         Map<String, List<Article>> result = newsApiService.searchNews(keyword, interval, unit,false);
@@ -88,24 +162,6 @@ public class NewsApiServiceTest {
         assertTrue(result.containsKey(expectedKey));
         assertEquals(1, result.get(expectedKey).size());
 
-        verify(newsCache, times(1)).isCacheValid(eq(keyword), anyLong());
         verify(newsCache, times(1)).getFromCache(eq(keyword));
-    }
-
-    @Test
-    public void testSearchNews_NoCacheAndApiFailure() {
-        String keyword = "test";
-        CustomChronoUnit unit = CustomChronoUnit.HOURS;
-        long interval = 12L;
-
-        when(restTemplate.getForObject(anyString(), eq(NewsApiResponse.class))).thenThrow(new ResourceAccessException("API unavailable"));
-        when(newsCache.isCacheValid(eq(keyword), anyLong())).thenReturn(false);
-
-        Map<String, List<Article>> result = newsApiService.searchNews(keyword, interval, unit,false);
-
-        assertTrue(result.isEmpty());
-
-        verify(newsCache, times(1)).isCacheValid(eq(keyword), anyLong());
-        verify(newsCache, times(0)).getFromCache(eq(keyword));
     }
 }

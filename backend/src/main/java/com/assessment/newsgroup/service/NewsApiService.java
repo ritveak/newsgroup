@@ -48,7 +48,10 @@ public class NewsApiService {
                 articles = newsCache.getFromCache(keyword);
             }
         }
-        articles.removeAll(articles.stream().filter(article -> article.title().equalsIgnoreCase("[Removed]")).toList());
+        var removedArticles =articles.stream().filter(article -> article.title().equalsIgnoreCase("[Removed]")).toList();
+        if(!CollectionUtils.isEmpty(removedArticles)){
+            articles.removeAll(removedArticles);
+        }
         // Grouping logic
         return articles.stream()
                 .collect(Collectors.groupingBy(article -> getIntervalKey(article.publishedAt(), interval, chronoUnit, ZonedDateTime.now())));
