@@ -22,8 +22,4 @@ public class NewsCache {
         return cache.getOrDefault(keyword, cache.getOrDefault(ScheduledTasks.TOP_HEADLINES,List.of()));
     }
 
-    public boolean isCacheValid(String keyword, long cacheDuration) {
-        Long timestamp = cacheTimestamps.get(keyword);
-        return timestamp != null && (System.currentTimeMillis() - timestamp) < cacheDuration;
-    }
 }

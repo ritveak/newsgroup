@@ -43,7 +43,6 @@ public class NewsApiServiceTest {
     public void setUp() {
         ReflectionTestUtils.setField(newsApiService, "apiKey", "testApiKey");
         ReflectionTestUtils.setField(newsApiService, "baseUrl", "http://testurl.com");
-        ReflectionTestUtils.setField(newsApiService, "cacheDuration", 3600L);
     }
 
     @Test

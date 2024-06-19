@@ -26,8 +26,6 @@ public class NewsApiService {
     @Value("${newsapi.baseurl}")
     private String baseUrl;
 
-    @Value("${newsapi.cacheduration}")
-    private long cacheDuration;
     private final RestTemplate restTemplate;
     private final NewsCache newsCache;
 
