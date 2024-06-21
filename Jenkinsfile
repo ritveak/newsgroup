@@ -10,7 +10,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git credentialsId: 'git', url: 'https://github.com/ritveak/newsgroup.git'
+                git branch: 'main',credentialsId: 'git', url: 'https://github.com/ritveak/newsgroup.git'
             }
         }
         stage('Build Backend') {
