@@ -16,7 +16,7 @@ pipeline {
         stage('Build Backend') {
             steps {
                 dir('backend') {
-                    sh 'echo Building the backend...'
+                    sh 'echo Building the frontend...'
                     sh './mvnw clean package'
                 }
             }
@@ -25,9 +25,11 @@ pipeline {
             steps {
                 // Navigate to the frontend directory and build the React application
                 dir('frontend') {
-                    sh 'echo Building the frontend...'
-                    sh 'npm install'
-                    sh 'npm run build'
+                 withEnv(['CI=false']) {
+                        sh 'echo Building the frontend...'
+                        sh 'npm install'
+                        sh 'npm run build'
+                    }
                 }
             }
         }
@@ -49,4 +51,9 @@ pipeline {
         }
     }
 
+    post {
+        always {
+            cleanWs()
+        }
+    }
 }
