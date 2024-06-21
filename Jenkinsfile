@@ -15,7 +15,8 @@ pipeline {
         }
         stage('Build Backend') {
             steps {
-                dir('/backend') {
+                dir('backend') {
+                    sh 'echo Building the backend...'
                     sh './mvnw clean package'
                 }
             }
@@ -23,7 +24,8 @@ pipeline {
         stage('Build Frontend') {
             steps {
                 // Navigate to the frontend directory and build the React application
-                dir('/frontend') {
+                dir('frontend') {
+                    sh 'echo Building the frontend...'
                     sh 'npm install'
                     sh 'npm run build'
                 }
