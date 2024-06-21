@@ -37,14 +37,7 @@ pipeline {
                 }
             }
         }
-//        stage('Test Frontend') {
-//            steps {
-//                // Run tests for the React application
-//                dir('frontend') {
-//                    sh 'npm test'
-//                }
-//            }
-//        }
+
         stage('Package & Archive') {
             steps {
                 // Archive the build artifacts
@@ -54,9 +47,4 @@ pipeline {
         }
     }
 
-    post {
-        always {
-            cleanWs()
-        }
-    }
 }
