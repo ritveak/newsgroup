@@ -58,7 +58,7 @@ public class NewsApiService {
         if(Objects.isNull(response) || CollectionUtils.isEmpty(response.articles())){
             throw new NewsNotFoundException("No Records Found");
         }
-        var removedArticles = response.articles().stream().filter(article -> article.title().equalsIgnoreCase("[Removed]")).toList();
+        var removedArticles = response.articles().stream().filter(article -> Objects.isNull(article.title()) || article.title().equalsIgnoreCase("[Removed]")).toList();
         if(!CollectionUtils.isEmpty(removedArticles)){
             response.articles().removeAll(removedArticles);
         }

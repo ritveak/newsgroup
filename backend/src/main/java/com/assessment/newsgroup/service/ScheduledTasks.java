@@ -14,7 +14,7 @@ import java.util.List;
 @Service
 public class ScheduledTasks  implements SmartLifecycle {
 
-    public static final String TOP_HEADLINES = "top-headlines";
+    public static final String TOP_HEADLINES = "TOP_HEADLINES";
     @Value("${newsapi.key}")
     private String apiKey;
 
@@ -44,6 +44,10 @@ public class ScheduledTasks  implements SmartLifecycle {
         } catch (Exception e) {
             // Handle exceptions (log the error, etc.)
         }
+    }
+    @Scheduled(fixedRateString = "${newsapi.cacheduration}")
+    public void cleanupCache() {
+        newsCache.cleanupCache();
     }
     @Override
     public void start() {
