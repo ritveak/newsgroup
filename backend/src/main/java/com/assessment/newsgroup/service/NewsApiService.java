@@ -1,6 +1,7 @@
 package com.assessment.newsgroup.service;
 
 import com.assessment.newsgroup.cache.NewsCache;
+import com.assessment.newsgroup.controller.NewsNotFoundException;
 import com.assessment.newsgroup.model.*;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
@@ -11,7 +12,6 @@ import org.springframework.web.client.RestTemplate;
 
 import java.time.ZonedDateTime;
 import java.time.temporal.ChronoUnit;
-import java.util.List;
 import java.util.Objects;
 import java.util.stream.Collectors;
 
@@ -33,45 +33,51 @@ public class NewsApiService {
 
     public ResponsePayload searchNews(String keyword, long interval, CustomChronoUnit customChronoUnit, Boolean isOfflineMode) {
         var chronoUnit = customChronoUnit.toChronoUnit();
-        List<Article> articles;
-        FetchArticleResponse fetchArticleResponse;
-        String headerMessage;
-        if(isOfflineMode){
-            fetchArticleResponse = newsCache.getFromCache(keyword);
+        FetchedArticleResponse fetchedArticleResponse;
+        if(isOfflineMode || newsCache.isCacheValid(keyword)){
+            fetchedArticleResponse = newsCache.getFromCache(keyword);
         }else {
-            try {
-                fetchArticleResponse = fetchArticlesFromApi(keyword);
-            } catch (HttpServerErrorException | ResourceAccessException e) {
-                fetchArticleResponse = newsCache.getFromCache(keyword);
-            }
-        }
-        var removedArticles =fetchArticleResponse.articles().stream().filter(article -> article.title().equalsIgnoreCase("[Removed]")).toList();
-        if(!CollectionUtils.isEmpty(removedArticles)){
-            fetchArticleResponse.articles().removeAll(removedArticles);
-        }
-        if(fetchArticleResponse.articles().size()==0){
-            fetchArticleResponse = newsCache.getFromCache(keyword);
+            fetchedArticleResponse = fetchArticleResponseFromAPIOrCache(keyword);
         }
         // Grouping logic
-        var articleMap =  fetchArticleResponse.articles().stream()
+        var articleMap =  fetchedArticleResponse.articles().stream()
                 .collect(Collectors.groupingBy(article -> getIntervalKey(article.publishedAt(), interval, chronoUnit, ZonedDateTime.now())));
-        return new ResponsePayload(articleMap, fetchArticleResponse.headerMessage());
+        return new ResponsePayload(articleMap, fetchedArticleResponse.headerMessage());
+    }
+
+    private FetchedArticleResponse fetchArticleResponseFromAPIOrCache(String keyword) {
+        FetchedArticleResponse fetchedArticleResponse;
+        try {
+            fetchedArticleResponse = fetchArticlesFromApi(keyword);
+        } catch (HttpServerErrorException | ResourceAccessException |NewsNotFoundException e) {
+            fetchedArticleResponse = newsCache.getFromCache(ScheduledTasks.TOP_HEADLINES);
+        }
+        return fetchedArticleResponse;
+    }
+    private void deleteRemovedArticles(NewsApiResponse response) throws NewsNotFoundException {
+        if(Objects.isNull(response) || CollectionUtils.isEmpty(response.articles())){
+            throw new NewsNotFoundException("No Records Found");
+        }
+        var removedArticles = response.articles().stream().filter(article -> article.title().equalsIgnoreCase("[Removed]")).toList();
+        if(!CollectionUtils.isEmpty(removedArticles)){
+            response.articles().removeAll(removedArticles);
+        }
+
     }
 
 
-    private FetchArticleResponse fetchArticlesFromApi(String keyword) {
+    private FetchedArticleResponse fetchArticlesFromApi(String keyword) throws NewsNotFoundException {
         String url = String.format("%s/everything?q=%s&apiKey=%s", baseUrl, keyword, apiKey);
         NewsApiResponse response = restTemplate.getForObject(url, NewsApiResponse.class);
-        List<Article> articles;
-        FetchArticleResponse fetchArticleResponse;
+        deleteRemovedArticles(response);
+        //if after removing all removed articles, the result becomes empty then fetch top headlines from cache
         if(Objects.nonNull(response) && !CollectionUtils.isEmpty(response.articles())){
-            articles = response.articles();
-            fetchArticleResponse = new FetchArticleResponse(articles,"Fetched results for "+keyword +" from Everything API");
+            var articles = response.articles();
             newsCache.addToCache(keyword, articles);
-        }else{
-            fetchArticleResponse = newsCache.getFromCache(keyword);
+            return new FetchedArticleResponse(articles,"Fetched results for "+keyword +" from Everything API");
+        }else {
+            throw new NewsNotFoundException("No Records Found");
         }
-        return fetchArticleResponse;
     }
 
     private String getIntervalKey(String publishedAt, long interval, ChronoUnit unit, ZonedDateTime now) {
