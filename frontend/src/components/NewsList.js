@@ -3,7 +3,7 @@ import Card from 'react-bootstrap/Card';
 import defaultImage from '../news.png'; // Import your local image
 import { DateTime } from 'luxon';
 
-const NewsList = ({ articles, interval,unit}) => {
+const NewsList = ({ headerMessage, articles, interval,unit}) => {
     const renderArticlesByDate = () => {
         let renderedArticles = [];
        
@@ -38,12 +38,12 @@ const adjustStartDate = (startDate, interval, unit, index) => {
 
 
             renderedArticles.push(
-                <div key={date} style={{height:'48rem'}}>
+                <div key={date} style={{paddingTop:'2rem'}}>
                   
-            <h8>
+            <p style={{fontStyle:'italic'}}>
                 {`Interval ${renderedArticles.length+1}: Articles from ${startDateString} to ${endDateString} [${articlesInDate.length} Articles]`}
-            </h8>
-                             <div className="card-deck d-flex flex-nowrap overflow-auto">
+            </p>
+                             <div className="card-deck d-flex flex-nowrap overflow-auto" style={{height:'40rem'}}>
                         {renderArticles(articlesInDate)}
                     </div>
                 </div>
@@ -55,21 +55,36 @@ const adjustStartDate = (startDate, interval, unit, index) => {
 
     const renderArticles = (articles) => {
         return articles.map((article, index) => (
-            <Card key={index} style={{minWidth: '18rem', maxWidth: '18rem', flex: '0 0 auto' }}>
-                <Card.Img
-                    variant="top"
-                    src={article.urlToImage ? article.urlToImage : defaultImage} // Use defaultImage if article.urlToImage is falsy
-                    alt={article.title}
-                    style={{width:'18rem'}}
-                />
-                <Card.Body>
-                    <Card.Title style={{height:'9rem'}}>{article.title}</Card.Title>
-                    <hr style={{width:'80%'}}></hr>
-                    <Card.Text>{truncateText(article.description)}</Card.Text>
-                    <a href={article.url} className="btn btn-primary" target="_blank" rel="noopener noreferrer">Read more</a>
-                    <p className="card-text"><small className="text-muted">{new Date(article.publishedAt).toLocaleString()}</small></p>
-                </Card.Body>
-            </Card>
+            // <Card key={index} style={{minWidth: '18rem', maxWidth: '18rem', flex: '0 0 auto' }}>
+            //     <Card.Img
+            //         variant="top"
+            //         src={article.urlToImage ? article.urlToImage : defaultImage} // Use defaultImage if article.urlToImage is falsy
+            //         alt={article.title}
+            //         style={{width:'18rem'}}
+            //     />
+            //     <Card.Body>
+            //         <Card.Title style={{height:'9rem'}}>{article.title}</Card.Title>
+            //         <hr style={{width:'80%'}}></hr>
+            //         <Card.Text>{article?.description ? truncateText(article.description):" "}</Card.Text>
+            //         <a href={article.url} className="btn btn-primary" target="_blank" rel="noopener noreferrer">Read more</a>
+            //         <p className="card-text"><small className="text-muted">{new Date(article.publishedAt).toLocaleString()}</small></p>
+            //     </Card.Body>
+            // </Card>
+<Card key={index} style={{ minWidth: '18rem', maxWidth: '18rem', flex: '0 0 auto' }}>
+    <Card.Img
+        variant="top"
+        src={article.urlToImage ? article.urlToImage : defaultImage}
+        alt={article.title}
+        style={{ width: '18rem', height: '10rem', objectFit: 'cover' }} // Set height and object-fit
+    />
+    <Card.Body>
+        <Card.Title style={{ height: '8rem' }}>{article.title}</Card.Title>
+        <hr style={{ width: '80%' }}></hr>
+        <Card.Text  style={{ height: '7rem', width:'100%' }}>{article?.description ? truncateText(article.description) : " "}</Card.Text>
+        <a href={article.url} className="btn btn-primary" target="_blank" rel="noopener noreferrer">Read more</a>
+        <p style={{ width:'100%' }} className="card-text"><small className="text-muted">{new Date(article.publishedAt).toLocaleString()}</small></p>
+    </Card.Body>
+</Card>
         ));
     };
         // Function to truncate text to a specified length
@@ -80,6 +95,7 @@ const adjustStartDate = (startDate, interval, unit, index) => {
 
     return (
         <div>
+            <h3>{headerMessage?headerMessage:""}</h3>
             {renderArticlesByDate()}
         </div>
     );

@@ -1,7 +1,7 @@
 package com.assessment.newsgroup.controller;
 
-import com.assessment.newsgroup.model.Article;
 import com.assessment.newsgroup.model.CustomChronoUnit;
+import com.assessment.newsgroup.model.ResponsePayload;
 import com.assessment.newsgroup.service.NewsApiService;
 
 import io.swagger.v3.oas.annotations.Operation;
@@ -16,8 +16,6 @@ import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
-import java.util.List;
-import java.util.Map;
 
 @RestController
 @Validated
@@ -33,7 +31,7 @@ public class NewsController {
             @ApiResponse(responseCode = "500", description = "Internal server error")
     })
     @GetMapping("/search")
-    public Map<String, List<Article>> searchNews(
+    public ResponsePayload searchNews(
             @Parameter(description = "Keyword to search for", required = true)
             @RequestParam @NotBlank(message = "Keyword is mandatory") String keyword,
             @Parameter(description = "Interval for grouping results", required = false)
