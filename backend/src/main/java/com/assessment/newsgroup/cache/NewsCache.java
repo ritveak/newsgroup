@@ -31,14 +31,17 @@ public class NewsCache {
             headerMessage = "Fetched results for "+keyword+" from cache.";
         }else{
             articles = cache.getOrDefault(ScheduledTasks.TOP_HEADLINES,List.of());
-            headerMessage = "Could not find results for "+keyword+".";
+            headerMessage = "Could not find results for "+keyword;
             if(!articles.isEmpty()){
-                headerMessage+="enjoy the headlines for now.";
+                headerMessage+=". Enjoy the headlines for now.";
             }
         }
         return new FetchedArticleResponse(articles,headerMessage);
     }
     public synchronized boolean isCacheValid(String keyword) {
+        if(keyword.equalsIgnoreCase(ScheduledTasks.TOP_HEADLINES)){
+            return true;
+        }
         Long timestamp = cacheTimestamps.get(keyword.toUpperCase());
         if (timestamp == null) {
             return false;
