@@ -1,0 +1,1215 @@
+2024-06-24 14:19:00 INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.assessment.newsgroup.NewsgroupApplicationTests]: NewsgroupApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-06-24 14:19:00 INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.assessment.newsgroup.NewsgroupApplication for test class com.assessment.newsgroup.NewsgroupApplicationTests
+2024-06-24 14:19:00 INFO  c.a.n.NewsgroupApplicationTests - Starting NewsgroupApplicationTests using Java 17.0.8.1 with PID 17030 (started by ritveak in /home/ritveak/Projects/newsgroup/backend)
+2024-06-24 14:19:00 DEBUG c.a.n.NewsgroupApplicationTests - Running with Spring Boot v3.3.0, Spring v6.1.8
+2024-06-24 14:19:00 INFO  c.a.n.NewsgroupApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2024-06-24 14:19:06 INFO  c.a.newsgroup.service.ScheduledTasks - Starting ScheduledTasks
+2024-06-24 14:19:06 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:19:07 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:19:07 INFO  c.a.n.NewsgroupApplicationTests - Started NewsgroupApplicationTests in 7.211 seconds (process running for 8.912)
+2024-06-24 14:19:07 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:19:07 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:19:07 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:19:07 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:19:08 INFO  c.a.newsgroup.NewsgroupApplication - Starting NewsgroupApplication using Java 17.0.8.1 with PID 17030 (started by ritveak in /home/ritveak/Projects/newsgroup/backend)
+2024-06-24 14:19:08 DEBUG c.a.newsgroup.NewsgroupApplication - Running with Spring Boot v3.3.0, Spring v6.1.8
+2024-06-24 14:19:08 INFO  c.a.newsgroup.NewsgroupApplication - No active profile set, falling back to 1 default profile: "default"
+2024-06-24 14:19:09 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 9090 (http)
+2024-06-24 14:19:09 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9090"]
+2024-06-24 14:19:09 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-24 14:19:09 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-06-24 14:19:09 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-24 14:19:09 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 954 ms
+2024-06-24 14:19:10 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9090"]
+2024-06-24 14:19:10 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 9090 (http) with context path '/'
+2024-06-24 14:19:10 INFO  c.a.newsgroup.service.ScheduledTasks - Starting ScheduledTasks
+2024-06-24 14:19:10 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:19:10 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:19:10 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:19:10 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:19:10 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:19:10 INFO  c.a.newsgroup.NewsgroupApplication - Started NewsgroupApplication in 1.777 seconds (process running for 11.658)
+2024-06-24 14:19:10 INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.assessment.newsgroup.configuration.AppConfigTest]: AppConfigTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-06-24 14:19:10 INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.assessment.newsgroup.NewsgroupApplication for test class com.assessment.newsgroup.configuration.AppConfigTest
+2024-06-24 14:19:10 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:19:15 INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.assessment.newsgroup.controller.GlobalExceptionHandlerTest]: GlobalExceptionHandlerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-06-24 14:19:15 INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.assessment.newsgroup.NewsgroupApplication for test class com.assessment.newsgroup.controller.GlobalExceptionHandlerTest
+2024-06-24 14:19:15 INFO  c.a.n.c.GlobalExceptionHandlerTest - Starting GlobalExceptionHandlerTest using Java 17.0.8.1 with PID 17030 (started by ritveak in /home/ritveak/Projects/newsgroup/backend)
+2024-06-24 14:19:15 DEBUG c.a.n.c.GlobalExceptionHandlerTest - Running with Spring Boot v3.3.0, Spring v6.1.8
+2024-06-24 14:19:15 INFO  c.a.n.c.GlobalExceptionHandlerTest - No active profile set, falling back to 1 default profile: "default"
+2024-06-24 14:19:16 INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2024-06-24 14:19:16 INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2024-06-24 14:19:16 INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 2 ms
+2024-06-24 14:19:16 INFO  c.a.n.c.GlobalExceptionHandlerTest - Started GlobalExceptionHandlerTest in 0.725 seconds (process running for 17.402)
+2024-06-24 14:19:16 WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'keyword' for method parameter type String is not present]
+2024-06-24 14:19:16 WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'keyword' for method parameter type String is not present]
+2024-06-24 14:19:16 INFO  c.a.newsgroup.service.ScheduledTasks - Stopping ScheduledTasks
+2024-06-24 14:19:16 INFO  c.a.newsgroup.service.ScheduledTasks - Stopping ScheduledTasks
+2024-06-24 14:19:45 INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.assessment.newsgroup.configuration.AppConfigTest]: AppConfigTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-06-24 14:19:45 INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.assessment.newsgroup.NewsgroupApplication for test class com.assessment.newsgroup.configuration.AppConfigTest
+2024-06-24 14:19:45 INFO  c.a.n.configuration.AppConfigTest - Starting AppConfigTest using Java 17.0.8.1 with PID 17203 (started by ritveak in /home/ritveak/Projects/newsgroup/backend)
+2024-06-24 14:19:45 DEBUG c.a.n.configuration.AppConfigTest - Running with Spring Boot v3.3.0, Spring v6.1.8
+2024-06-24 14:19:45 INFO  c.a.n.configuration.AppConfigTest - No active profile set, falling back to 1 default profile: "default"
+2024-06-24 14:19:48 INFO  c.a.newsgroup.service.ScheduledTasks - Starting ScheduledTasks
+2024-06-24 14:19:48 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:19:49 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:19:49 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:19:49 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:19:49 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:19:49 INFO  c.a.n.configuration.AppConfigTest - Started AppConfigTest in 4.29 seconds (process running for 11.559)
+2024-06-24 14:19:50 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:19:50 INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.assessment.newsgroup.NewsgroupApplicationTests]: NewsgroupApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-06-24 14:19:50 INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.assessment.newsgroup.NewsgroupApplication for test class com.assessment.newsgroup.NewsgroupApplicationTests
+2024-06-24 14:19:50 INFO  c.a.newsgroup.NewsgroupApplication - Starting NewsgroupApplication using Java 17.0.8.1 with PID 17203 (started by ritveak in /home/ritveak/Projects/newsgroup/backend)
+2024-06-24 14:19:50 DEBUG c.a.newsgroup.NewsgroupApplication - Running with Spring Boot v3.3.0, Spring v6.1.8
+2024-06-24 14:19:50 INFO  c.a.newsgroup.NewsgroupApplication - No active profile set, falling back to 1 default profile: "default"
+2024-06-24 14:19:51 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 9090 (http)
+2024-06-24 14:19:51 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9090"]
+2024-06-24 14:19:51 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-24 14:19:51 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-06-24 14:19:51 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-24 14:19:51 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 797 ms
+2024-06-24 14:19:52 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9090"]
+2024-06-24 14:19:52 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 9090 (http) with context path '/'
+2024-06-24 14:19:52 INFO  c.a.newsgroup.service.ScheduledTasks - Starting ScheduledTasks
+2024-06-24 14:19:52 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:19:52 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:19:52 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:19:52 INFO  c.a.newsgroup.NewsgroupApplication - Started NewsgroupApplication in 1.571 seconds (process running for 14.153)
+2024-06-24 14:19:52 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:19:52 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:19:52 INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.assessment.newsgroup.controller.GlobalExceptionHandlerTest]: GlobalExceptionHandlerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-06-24 14:19:52 INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.assessment.newsgroup.NewsgroupApplication for test class com.assessment.newsgroup.controller.GlobalExceptionHandlerTest
+2024-06-24 14:19:52 INFO  c.a.n.c.GlobalExceptionHandlerTest - Starting GlobalExceptionHandlerTest using Java 17.0.8.1 with PID 17203 (started by ritveak in /home/ritveak/Projects/newsgroup/backend)
+2024-06-24 14:19:52 DEBUG c.a.n.c.GlobalExceptionHandlerTest - Running with Spring Boot v3.3.0, Spring v6.1.8
+2024-06-24 14:19:52 INFO  c.a.n.c.GlobalExceptionHandlerTest - No active profile set, falling back to 1 default profile: "default"
+2024-06-24 14:19:52 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:19:53 INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2024-06-24 14:19:53 INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2024-06-24 14:19:53 INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+2024-06-24 14:19:53 INFO  c.a.n.c.GlobalExceptionHandlerTest - Started GlobalExceptionHandlerTest in 0.671 seconds (process running for 15.019)
+2024-06-24 14:19:53 WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'keyword' for method parameter type String is not present]
+2024-06-24 14:19:53 WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'keyword' for method parameter type String is not present]
+2024-06-24 14:19:53 INFO  c.a.newsgroup.service.ScheduledTasks - Stopping ScheduledTasks
+2024-06-24 14:19:53 INFO  c.a.newsgroup.service.ScheduledTasks - Stopping ScheduledTasks
+2024-06-24 14:20:15 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: null/top-headlines?sources=bbc-news&apiKey=null
+2024-06-24 14:20:15 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:20:15 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: null/top-headlines?sources=bbc-news&apiKey=null
+2024-06-24 14:20:15 ERROR c.a.newsgroup.service.ScheduledTasks - Error occurred while fetching top headlines
+java.lang.RuntimeException: API error
+	at org.springframework.web.client.RestTemplate.getForObject(RestTemplate.java:401)
+	at com.assessment.newsgroup.service.ScheduledTasks.fetchTopHeadlines(ScheduledTasks.java:43)
+	at com.assessment.newsgroup.service.ScheduledTasksTest.testFetchTopHeadlinesFailure(ScheduledTasksTest.java:74)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:728)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:218)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:214)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:139)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:63)
+	at com.intellij.junit5.JUnit5IdeaTestRunner.startRunnerWithArgs(JUnit5IdeaTestRunner.java:57)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
+2024-06-24 14:20:15 INFO  c.a.newsgroup.service.ScheduledTasks - Starting ScheduledTasks
+2024-06-24 14:20:15 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: null/top-headlines?sources=bbc-news&apiKey=null
+2024-06-24 14:20:15 WARN  c.a.newsgroup.service.ScheduledTasks - No articles found in the response
+2024-06-24 14:20:15 INFO  c.a.newsgroup.service.ScheduledTasks - Stopping ScheduledTasks
+2024-06-24 14:20:33 INFO  c.a.newsgroup.NewsgroupApplication - Starting NewsgroupApplication using Java 17.0.8.1 with PID 17442 (/home/ritveak/Projects/newsgroup/backend/target/classes started by ritveak in /home/ritveak/Projects/newsgroup/backend)
+2024-06-24 14:20:33 DEBUG c.a.newsgroup.NewsgroupApplication - Running with Spring Boot v3.3.0, Spring v6.1.8
+2024-06-24 14:20:33 INFO  c.a.newsgroup.NewsgroupApplication - No active profile set, falling back to 1 default profile: "default"
+2024-06-24 14:20:35 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 9090 (http)
+2024-06-24 14:20:35 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9090"]
+2024-06-24 14:20:35 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-24 14:20:35 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-06-24 14:20:35 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-24 14:20:35 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2148 ms
+2024-06-24 14:20:36 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9090"]
+2024-06-24 14:20:36 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 9090 (http) with context path '/'
+2024-06-24 14:20:36 INFO  c.a.newsgroup.service.ScheduledTasks - Starting ScheduledTasks
+2024-06-24 14:20:36 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:20:38 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:20:38 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:20:43 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:20:43 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:20:43 INFO  c.a.newsgroup.NewsgroupApplication - Started NewsgroupApplication in 11.084 seconds (process running for 13.038)
+2024-06-24 14:20:44 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:20:48 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:20:48 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:20:48 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:20:49 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:20:58 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:20:58 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:20:58 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:21:00 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:21:08 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:21:08 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:21:08 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:21:10 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:21:18 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:21:18 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:21:18 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:21:19 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:21:28 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:21:31 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:21:31 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:21:31 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:21:38 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:21:38 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:21:38 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:21:39 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:21:48 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:21:49 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:21:49 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:21:49 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:21:58 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:21:58 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:21:58 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:21:59 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:22:08 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:22:08 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:22:08 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:22:09 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:22:18 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:22:18 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:22:18 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:22:19 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:22:28 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:22:29 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:22:29 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:22:30 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:22:38 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:22:38 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:22:38 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:22:39 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:22:48 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:22:48 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:22:48 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:22:49 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:22:58 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-24 14:22:58 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-06-24 14:22:58 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 4 ms
+2024-06-24 14:22:58 INFO  c.a.newsgroup.service.NewsApiService - Searching news with keyword: Apple, interval: 12, unit: DAYS, offline mode: true
+2024-06-24 14:22:58 DEBUG c.a.newsgroup.service.NewsApiService - Fetching articles from cache for keyword: Apple
+2024-06-24 14:22:58 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:22:58 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:22:58 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:22:59 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:23:08 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:23:08 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:23:08 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:23:09 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:23:18 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:23:18 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:23:18 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:23:19 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:23:28 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:23:28 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:23:28 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:23:29 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:23:38 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:23:38 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:23:38 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:23:39 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:23:48 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:23:48 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:23:48 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:23:50 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:23:58 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:23:58 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:23:58 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:23:59 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:24:08 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:24:08 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:24:08 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:24:10 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:24:18 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:24:18 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:24:18 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:24:19 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:24:28 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:24:29 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:24:29 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:24:30 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:24:38 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:24:38 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:24:38 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:24:39 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:24:48 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:24:48 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:24:48 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:24:50 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:24:58 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:24:58 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:24:58 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:24:59 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:25:08 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:25:08 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:25:08 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:25:10 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:25:18 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:25:18 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:25:18 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:25:19 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:25:28 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:25:28 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:25:28 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:25:30 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:25:38 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:25:38 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:25:38 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:25:39 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:25:48 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:25:48 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:25:48 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:25:50 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:25:58 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:25:58 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:25:58 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:25:59 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:26:08 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:26:08 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:26:08 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:26:10 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:26:18 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:26:18 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:26:18 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:26:19 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:26:27 INFO  c.a.newsgroup.service.NewsApiService - Searching news with keyword: apple, interval: 12, unit: HOURS, offline mode: false
+2024-06-24 14:26:27 DEBUG c.a.newsgroup.service.NewsApiService - Fetching articles from API for keyword: apple
+2024-06-24 14:26:27 DEBUG c.a.newsgroup.service.NewsApiService - Fetching articles from API with URL: https://newsapi.org/v2/everything?q=apple&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:26:28 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:26:28 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:26:28 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:26:32 INFO  c.a.newsgroup.service.NewsApiService - Searching news with keyword: apple, interval: 12, unit: HOURS, offline mode: false
+2024-06-24 14:26:32 DEBUG c.a.newsgroup.service.NewsApiService - Fetching articles from API for keyword: apple
+2024-06-24 14:26:32 DEBUG c.a.newsgroup.service.NewsApiService - Fetching articles from API with URL: https://newsapi.org/v2/everything?q=apple&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:26:33 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:26:38 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:26:38 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:26:38 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:26:39 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:26:48 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:26:48 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:26:48 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:26:49 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:26:58 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:26:58 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:26:58 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:27:00 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:27:08 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:27:08 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:27:08 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:27:10 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:27:18 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:27:18 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:27:18 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:27:19 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:27:28 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:27:28 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:27:28 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:27:31 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:27:38 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:27:38 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:27:38 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:27:40 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:27:48 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:27:48 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:27:48 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:27:49 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:27:58 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:27:58 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:27:58 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:28:00 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:28:08 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:28:08 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:28:08 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:28:10 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:28:18 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:28:18 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:28:18 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:28:19 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:28:28 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:28:28 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:28:28 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:28:30 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:28:38 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:28:38 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:28:38 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:28:40 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:28:48 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:28:48 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:28:48 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:28:53 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:28:58 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:28:58 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:28:58 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:29:00 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:29:08 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:29:08 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:29:08 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:29:10 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:29:18 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:29:18 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:29:18 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:29:20 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:29:28 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:29:28 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:29:28 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:29:29 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:29:34 INFO  c.a.newsgroup.service.NewsApiService - Searching news with keyword: bitcoin, interval: 12, unit: HOURS, offline mode: false
+2024-06-24 14:29:34 DEBUG c.a.newsgroup.service.NewsApiService - Fetching articles from API for keyword: bitcoin
+2024-06-24 14:29:34 DEBUG c.a.newsgroup.service.NewsApiService - Fetching articles from API with URL: https://newsapi.org/v2/everything?q=bitcoin&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:29:34 INFO  c.a.newsgroup.service.NewsApiService - Searching news with keyword: apple, interval: 12, unit: HOURS, offline mode: false
+2024-06-24 14:29:34 DEBUG c.a.newsgroup.service.NewsApiService - Fetching articles from API for keyword: apple
+2024-06-24 14:29:34 DEBUG c.a.newsgroup.service.NewsApiService - Fetching articles from API with URL: https://newsapi.org/v2/everything?q=apple&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:29:38 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:29:38 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:29:38 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:29:39 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:29:48 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:29:48 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:29:48 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:29:54 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:29:58 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:29:58 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:29:58 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:29:59 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:30:08 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:30:08 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:30:08 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:30:09 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:30:18 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:30:18 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:30:18 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:30:20 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:30:28 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:30:28 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:30:28 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:30:30 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:30:38 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:30:38 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:30:38 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:30:39 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:30:48 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:30:48 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:30:48 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:30:50 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:30:58 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:30:58 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:30:58 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:30:59 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:31:08 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:31:08 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:31:08 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:31:09 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:31:18 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:31:18 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:31:18 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:31:19 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:31:28 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:31:28 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:31:28 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:31:29 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:31:38 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:31:38 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:31:38 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:31:40 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:31:48 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:31:49 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:31:49 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:31:50 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:31:58 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:31:58 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:31:58 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:31:59 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:32:08 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:32:08 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:32:08 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:32:09 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:32:18 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:32:18 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:32:18 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:32:19 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:32:28 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:32:28 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:32:28 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:32:29 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:32:41 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:32:42 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:32:42 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:32:47 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:32:48 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:32:48 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:32:48 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:32:49 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:32:58 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:32:58 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:32:58 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:33:00 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:33:09 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:33:09 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:33:09 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:33:17 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:33:18 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:33:18 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:33:18 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:33:20 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:33:28 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:33:28 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:33:28 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:33:29 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:33:38 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:33:38 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:33:38 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:33:39 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:33:48 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:33:48 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:33:48 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:33:54 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:33:58 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:33:58 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:33:59 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:33:59 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:34:08 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:34:08 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:34:08 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:34:10 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:34:18 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:34:18 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:34:18 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:34:19 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:34:28 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:34:28 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:34:28 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:34:29 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:34:38 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:34:38 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:34:38 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:34:39 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:34:48 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:34:48 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:34:48 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:34:50 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:34:58 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:34:58 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:34:58 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:35:00 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:35:08 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:35:08 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:35:08 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:35:10 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:35:18 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:35:18 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:35:18 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:35:22 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:35:28 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:35:28 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:35:28 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:35:30 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:35:38 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:35:38 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:35:38 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:35:40 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:35:48 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:35:49 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:35:49 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:35:50 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:35:58 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:35:59 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:35:59 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:36:00 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:36:08 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:36:08 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:36:08 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:36:09 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:36:18 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:36:18 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:36:18 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:36:20 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:36:28 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:36:28 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:36:28 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:36:38 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:36:38 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:36:38 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:36:38 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:36:39 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:36:48 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:36:48 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:36:48 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:36:49 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:36:58 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:36:58 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:36:58 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:36:59 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:37:08 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:37:08 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:37:08 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:37:18 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:37:19 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:37:19 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:37:19 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:37:19 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:37:28 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:37:29 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:37:29 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:37:33 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:37:38 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:37:38 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:37:38 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:37:40 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:37:48 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:37:48 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:37:48 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:37:56 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:37:58 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:37:58 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:37:58 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:37:59 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:38:08 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:38:08 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:38:08 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:38:09 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:38:18 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:38:18 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:38:18 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:38:20 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:38:28 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:38:28 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:38:28 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:38:29 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:38:38 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:38:38 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:38:38 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:38:40 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:38:48 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:38:48 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:38:48 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:38:50 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:38:58 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:38:58 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:38:58 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:39:00 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:39:08 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:39:08 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:39:08 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:39:09 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:39:18 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:39:18 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:39:18 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:39:20 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:39:28 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:39:28 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:39:28 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:39:30 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:39:38 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:39:38 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:39:38 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:39:40 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:39:48 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:39:48 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:39:48 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:39:54 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:39:58 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:39:58 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:39:58 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:39:59 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:40:08 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:40:08 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:40:08 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:40:10 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:40:18 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:40:18 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:40:18 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:40:19 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:40:28 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:40:28 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:40:28 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:40:40 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:40:40 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:40:40 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:40:40 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:40:40 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:40:48 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:40:48 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:40:48 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:40:49 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:40:58 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:40:58 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:40:58 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:41:01 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:41:08 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:41:08 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:41:08 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:41:09 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:41:18 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:41:18 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:41:18 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:41:25 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:41:28 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:41:28 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:41:28 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:41:29 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:41:38 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:41:38 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:41:38 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:41:40 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:41:48 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:41:48 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:41:48 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:41:51 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:41:58 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:41:58 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:41:58 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:42:04 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:42:08 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:42:08 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:42:08 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:42:09 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:42:18 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:42:18 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:42:18 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:42:20 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:42:28 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:42:28 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:42:28 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:42:29 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:42:38 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:42:38 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:42:38 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:42:50 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:42:50 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:42:50 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:42:50 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:42:50 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:42:58 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:42:58 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:42:58 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:43:01 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:43:08 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:43:08 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:43:08 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:43:10 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:43:18 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:43:18 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:43:18 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:43:19 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:43:28 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:43:28 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:43:28 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:43:29 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:43:38 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:43:38 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:43:38 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:43:41 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:43:48 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:43:48 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:43:48 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:43:49 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:43:58 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:43:58 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:43:58 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:43:59 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:44:08 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:44:08 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:44:08 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:44:10 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:44:18 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:44:18 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:44:18 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:44:19 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:44:28 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:44:28 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:44:28 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:44:29 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:44:38 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:44:38 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:44:38 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:44:40 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:44:48 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:44:48 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:44:48 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:44:51 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:44:58 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:44:58 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:44:58 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:44:59 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:45:08 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:45:08 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:45:08 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:45:11 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:45:18 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:45:18 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:45:18 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:45:26 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:45:28 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:45:28 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:45:28 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:45:29 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:45:38 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:45:38 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:45:38 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:45:39 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:45:48 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:45:48 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:45:48 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:45:51 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:45:58 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:45:58 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:45:58 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:46:06 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:46:08 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:46:08 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:46:08 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:46:09 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:46:18 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:46:18 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:46:18 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:46:20 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:46:28 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:46:28 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:46:28 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:46:29 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:46:38 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:46:38 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:46:38 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:46:40 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:46:48 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:46:48 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:46:48 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:46:51 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:46:58 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:46:58 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:46:58 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:46:59 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:47:08 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:47:08 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:47:08 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:47:10 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:47:18 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:47:18 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:47:18 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:47:19 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:47:28 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:47:28 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:47:28 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:47:30 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:47:38 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:47:38 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:47:38 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:47:40 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:47:48 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:47:48 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:47:48 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:47:50 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:47:58 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:47:58 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:47:58 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:48:00 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:48:08 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:48:08 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:48:08 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:48:11 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:48:18 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:48:19 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:48:19 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:48:19 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:48:28 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:48:28 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:48:28 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:48:29 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:48:38 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:48:38 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:48:38 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:48:39 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:48:48 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:48:48 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:48:48 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:48:50 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:48:58 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:48:58 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:48:58 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:49:02 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:49:08 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:49:08 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:49:08 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:49:11 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:49:18 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:49:18 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:49:18 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:49:26 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:49:28 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:49:28 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:49:28 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:49:29 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:49:38 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:49:38 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:49:38 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:49:41 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:49:48 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:49:48 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:49:48 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:49:52 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:49:58 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:49:58 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:49:58 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:50:09 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:50:09 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:50:09 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:50:09 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:50:09 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:50:18 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:50:18 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:50:18 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:50:20 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:50:28 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:50:28 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:50:28 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:50:30 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:50:38 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:50:38 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:50:38 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:50:40 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:50:48 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:50:48 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:50:48 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:50:49 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:50:58 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:50:58 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:50:58 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:51:01 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:51:08 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:51:08 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:51:08 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:51:10 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:51:18 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:51:18 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:51:18 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:51:27 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:51:28 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:51:28 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:51:28 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:51:29 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:51:38 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:51:38 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:51:38 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:51:39 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:51:48 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:51:48 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:51:48 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:51:53 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:51:58 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:51:58 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:51:58 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:52:00 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:52:08 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:52:08 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:52:08 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:52:10 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:52:18 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:52:18 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:52:18 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:52:20 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:52:28 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:52:28 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:52:28 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:52:29 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:52:38 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:52:38 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:52:38 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:52:44 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:52:48 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:52:48 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:52:48 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:52:50 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:52:58 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:52:58 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:52:58 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:52:59 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:53:08 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:53:08 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:53:08 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:53:11 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:53:18 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:53:18 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:53:18 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:53:19 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:53:28 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:53:28 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:53:28 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:53:29 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:53:38 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:53:38 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:53:38 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:53:41 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:53:48 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:53:48 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:53:48 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:53:51 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:53:58 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:53:58 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:53:58 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:54:00 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:54:08 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:54:08 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:54:08 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:54:10 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:54:18 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:54:18 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:54:18 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:54:19 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:54:28 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:54:28 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:54:28 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:54:30 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:54:38 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:54:38 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:54:38 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:54:45 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:54:48 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:54:48 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:54:48 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:54:49 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:54:58 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:54:58 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:54:58 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:54:59 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:55:08 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:55:08 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:55:08 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:55:09 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:55:18 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:55:18 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:55:18 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:55:19 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:55:28 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:55:28 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:55:28 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:55:29 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:55:38 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:55:38 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:55:38 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:55:40 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:55:48 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:55:48 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:55:48 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:55:49 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:55:58 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:55:58 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:55:58 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:55:59 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:56:08 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:56:08 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:56:08 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:56:09 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:56:18 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:56:18 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:56:18 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:56:20 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:56:28 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:56:28 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:56:28 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:56:29 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:56:38 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:56:38 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:56:38 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:56:39 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:56:48 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:56:48 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:56:48 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:56:50 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:56:58 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:56:58 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:56:58 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:56:59 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:57:08 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:57:08 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:57:08 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:57:10 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:57:18 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:57:18 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:57:18 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:57:25 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:57:28 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:57:28 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:57:28 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:57:29 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:57:38 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:57:38 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:57:38 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:57:39 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:57:48 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:57:48 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:57:48 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:57:50 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:57:58 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:57:58 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:57:58 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:58:04 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:58:08 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:58:08 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:58:08 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:58:09 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:58:18 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:58:18 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:58:18 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:58:20 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:58:28 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:58:28 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:58:28 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:58:31 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:58:38 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:58:38 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:58:38 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:58:44 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:58:48 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:58:48 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:58:48 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:58:49 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:58:58 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:58:58 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:58:58 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:59:02 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:59:08 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:59:08 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:59:08 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:59:09 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:59:18 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:59:18 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:59:18 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:59:24 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:59:28 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:59:28 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:59:28 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:59:29 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:59:38 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:59:38 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:59:38 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:59:41 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:59:48 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:59:48 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:59:48 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:59:49 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 14:59:58 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 14:59:58 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 14:59:58 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 14:59:59 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 15:00:08 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 15:00:08 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 15:00:08 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 15:00:10 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 15:00:18 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 15:00:18 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 15:00:18 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 15:00:22 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 15:00:28 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 15:00:28 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 15:00:28 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 15:00:30 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 15:00:38 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 15:00:38 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 15:00:38 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 15:00:40 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 15:00:48 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 15:00:48 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 15:00:48 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 15:00:49 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 15:00:58 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 15:00:58 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 15:00:58 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 15:00:59 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 15:01:08 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 15:01:08 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 15:01:08 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 15:01:10 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 15:01:18 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 15:01:18 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 15:01:18 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 15:01:24 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 15:01:28 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 15:01:28 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 15:01:28 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 15:01:29 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 15:01:38 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 15:01:38 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 15:01:38 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 15:01:40 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 15:01:48 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 15:01:48 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 15:01:48 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 15:01:50 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 15:01:58 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 15:01:58 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 15:01:58 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 15:02:00 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 15:02:08 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 15:02:08 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 15:02:10 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 15:02:11 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 15:02:18 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 15:02:18 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 15:02:18 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d
+2024-06-24 15:02:19 INFO  c.a.newsgroup.service.ScheduledTasks - Successfully fetched and cached top headlines
+2024-06-24 15:02:28 INFO  c.a.newsgroup.service.ScheduledTasks - Running cache cleanup
+2024-06-24 15:02:28 INFO  c.a.newsgroup.service.ScheduledTasks - Cache cleanup completed
+2024-06-24 15:02:28 INFO  c.a.newsgroup.service.ScheduledTasks - Triggered by Scheduler, fetching top headlines from URL: https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ccaf5d41cc5140c984818c344edcc14d

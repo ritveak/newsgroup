@@ -14,9 +14,11 @@ import java.time.ZonedDateTime;
 import java.time.temporal.ChronoUnit;
 import java.util.Objects;
 import java.util.stream.Collectors;
-
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 @Service
 public class NewsApiService {
+    private static final Logger logger = LoggerFactory.getLogger(NewsApiService.class);
     @Value("${newsapi.key}")
     private String apiKey;
 
@@ -32,11 +34,14 @@ public class NewsApiService {
     }
 
     public ResponsePayload searchNews(String keyword, long interval, CustomChronoUnit customChronoUnit, Boolean isOfflineMode) {
+        logger.info("Searching news with keyword: {}, interval: {}, unit: {}, offline mode: {}", keyword, interval, customChronoUnit, isOfflineMode);
         var chronoUnit = customChronoUnit.toChronoUnit();
         FetchedArticleResponse fetchedArticleResponse;
         if(isOfflineMode || newsCache.isCacheValid(keyword)){
+            logger.debug("Fetching articles from cache for keyword: {}", keyword);
             fetchedArticleResponse = newsCache.getFromCache(keyword);
         }else {
+            logger.debug("Fetching articles from API for keyword: {}", keyword);
             fetchedArticleResponse = fetchArticleResponseFromAPIOrCache(keyword);
         }
         // Grouping logic
@@ -50,6 +55,7 @@ public class NewsApiService {
         try {
             fetchedArticleResponse = fetchArticlesFromApi(keyword);
         } catch (HttpServerErrorException | ResourceAccessException |NewsNotFoundException e) {
+            logger.error("Error fetching articles from API for keyword: {}, falling back to top headlines cache", keyword, e);
             fetchedArticleResponse = newsCache.getFromCache(ScheduledTasks.TOP_HEADLINES);
         }
         return fetchedArticleResponse;
@@ -68,6 +74,7 @@ public class NewsApiService {
 
     private FetchedArticleResponse fetchArticlesFromApi(String keyword) throws NewsNotFoundException {
         String url = String.format("%s/everything?q=%s&apiKey=%s", baseUrl, keyword, apiKey);
+        logger.debug("Fetching articles from API for keyword {}",keyword);
         NewsApiResponse response = restTemplate.getForObject(url, NewsApiResponse.class);
         deleteRemovedArticles(response);
         //if after removing all removed articles, the result becomes empty then fetch top headlines from cache
