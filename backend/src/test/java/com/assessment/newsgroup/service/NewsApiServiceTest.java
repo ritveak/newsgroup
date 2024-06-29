@@ -11,7 +11,6 @@ import org.springframework.web.client.RestTemplate;
 import java.time.ZonedDateTime;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
 
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.ArgumentMatchers.anyString;
@@ -68,7 +67,7 @@ public class NewsApiServiceTest {
 
         assertEquals(1, result.result().size());
         verify(newsCache, times(0)).addToCache(eq(keyword), anyList());
-        verify(newsCache, times(1)).getFromCache(eq(ScheduledTasks.TOP_HEADLINES));
+        verify(newsCache, times(1)).getFromCache(eq("test"));
     }
 
     @Test
@@ -86,7 +85,7 @@ public class NewsApiServiceTest {
         assertNotNull(result);
         assertTrue(result.result().isEmpty());
         verify(newsCache, times(0)).addToCache(eq(keyword), anyList());
-        verify(newsCache, times(1)).getFromCache(eq(ScheduledTasks.TOP_HEADLINES));
+        verify(newsCache, times(1)).getFromCache(eq("test"));
     }
 
     @Test
@@ -123,7 +122,7 @@ public class NewsApiServiceTest {
 
         assertNotNull(result);
         assertEquals(1, result.result().size());
-        verify(newsCache, times(1)).getFromCache(eq(ScheduledTasks.TOP_HEADLINES));
+        verify(newsCache, times(1)).getFromCache(eq("test"));
     }
     @Test
     public void testFetchArticlesFromAPI_WithRemovedAndNullTitles() throws NewsNotFoundException {
@@ -149,7 +148,7 @@ public class NewsApiServiceTest {
         ResponsePayload result = newsApiService.searchNews(keyword, interval, unit, false);
 
         assertNotNull(result);
-        verify(newsCache, times(1)).getFromCache(eq(ScheduledTasks.TOP_HEADLINES));
+        verify(newsCache, times(1)).getFromCache(eq("test"));
     }
 
 }

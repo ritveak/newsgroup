@@ -28,13 +28,12 @@ const adjustStartDate = (startDate, interval, unit, index) => {
 }
 
         for (const [date, articlesInDate] of Object.entries(articles)) {
-            console.log(date);
             const endDate = DateTime.fromISO(date);
     let startDate = endDate;
 
     startDate = adjustStartDate(startDate, interval, unit, renderedArticles.length);
-    const startDateString = startDate.toLocaleString(DateTime.DATE_SHORT);
-    const endDateString = endDate.toLocaleString(DateTime.DATE_SHORT);
+    const startDateString = startDate.toLocaleString(DateTime.DATETIME_FULL);
+    const endDateString = endDate.toLocaleString(DateTime.DATETIME_FULL);
 
 
             renderedArticles.push(
@@ -55,27 +54,12 @@ const adjustStartDate = (startDate, interval, unit, index) => {
 
     const renderArticles = (articles) => {
         return articles.map((article, index) => (
-            // <Card key={index} style={{minWidth: '18rem', maxWidth: '18rem', flex: '0 0 auto' }}>
-            //     <Card.Img
-            //         variant="top"
-            //         src={article.urlToImage ? article.urlToImage : defaultImage} // Use defaultImage if article.urlToImage is falsy
-            //         alt={article.title}
-            //         style={{width:'18rem'}}
-            //     />
-            //     <Card.Body>
-            //         <Card.Title style={{height:'9rem'}}>{article.title}</Card.Title>
-            //         <hr style={{width:'80%'}}></hr>
-            //         <Card.Text>{article?.description ? truncateText(article.description):" "}</Card.Text>
-            //         <a href={article.url} className="btn btn-primary" target="_blank" rel="noopener noreferrer">Read more</a>
-            //         <p className="card-text"><small className="text-muted">{new Date(article.publishedAt).toLocaleString()}</small></p>
-            //     </Card.Body>
-            // </Card>
 <Card key={index} style={{ minWidth: '18rem', maxWidth: '18rem', flex: '0 0 auto' }}>
     <Card.Img
         variant="top"
         src={article.urlToImage ? article.urlToImage : defaultImage}
         alt={article.title}
-        style={{ width: '18rem', height: '10rem', objectFit: 'cover' }} // Set height and object-fit
+        style={{ width: '18rem', height: '10rem', objectFit: 'cover' }}
     />
     <Card.Body>
         <Card.Title style={{ height: '8rem' }}>{article.title}</Card.Title>

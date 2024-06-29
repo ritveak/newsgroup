@@ -12,7 +12,7 @@ import org.springframework.web.client.RestTemplate;
 
 import java.time.ZonedDateTime;
 import java.time.temporal.ChronoUnit;
-import java.util.Objects;
+import java.util.*;
 import java.util.stream.Collectors;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -47,7 +47,9 @@ public class NewsApiService {
         // Grouping logic
         var articleMap =  fetchedArticleResponse.articles().stream()
                 .collect(Collectors.groupingBy(article -> getIntervalKey(article.publishedAt(), interval, chronoUnit, ZonedDateTime.now())));
-        return new ResponsePayload(articleMap, fetchedArticleResponse.headerMessage());
+        Map<String, List<Article>> sortedMap = new TreeMap<>(Comparator.reverseOrder());
+        sortedMap.putAll(articleMap);
+        return new ResponsePayload(sortedMap, fetchedArticleResponse.headerMessage());
     }
 
     private FetchedArticleResponse fetchArticleResponseFromAPIOrCache(String keyword) {
@@ -56,7 +58,7 @@ public class NewsApiService {
             fetchedArticleResponse = fetchArticlesFromApi(keyword);
         } catch (HttpServerErrorException | ResourceAccessException |NewsNotFoundException e) {
             logger.error("Error fetching articles from API for keyword: {}, falling back to top headlines cache", keyword, e);
-            fetchedArticleResponse = newsCache.getFromCache(ScheduledTasks.TOP_HEADLINES);
+            fetchedArticleResponse = newsCache.getFromCache(keyword);
         }
         return fetchedArticleResponse;
     }
@@ -93,6 +95,6 @@ public class NewsApiService {
         long periods = unit.between(publishedDate, now) / interval;
          now = now.minus(periods * interval, unit);
 
-        return now.truncatedTo(ChronoUnit.HOURS).toString();
+        return now.truncatedTo(ChronoUnit.MINUTES).toString();
     }
 }
