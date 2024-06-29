@@ -15,12 +15,11 @@ const App = () => {
   const [isOffline, setIsOffline] = useState('');
 
   const handleSearch = (keyword,interval,unit,isOfflineMode) => {
-    console.log("isOffline Mode = "+isOfflineMode)
     setInterval(interval);
     setUnit(unit);
     fetch(`/search?keyword=${keyword}&interval=${interval}&unit=${unit}&isOfflineMode=${isOfflineMode}`)
         .then((response) => response.json())
-        .then((data) => {setArticles(data.result);setHeaderMessage(data.headerMessage);                 console.log(data)        })
+        .then((data) => {setArticles(data.result);setHeaderMessage(data.headerMessage);})
         .catch((error) => console.error('Error fetching news:', error));
 };
 
